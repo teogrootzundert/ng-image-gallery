@@ -210,7 +210,6 @@
 			restrict : 'AE',
 			scope : {
 				images 			: 	'=',		// []
-				imagesThumb		: 	'=',
 				methods 		: 	'=?',		// {}
 				conf 			: 	'=?',		// {}
 
@@ -239,7 +238,7 @@
 							// Thumbnails container
 							//  Hide for inline gallery
 							'<div ng-if="thumbnails && !inline" class="ng-image-gallery-thumbnails">' +
- 								'<div class="{{ itemClass }}" ng-gallery-flexi-attributes ng-repeat="image in imagesThumb track by image.id" ng-if="thumbLimit ? $index < thumbLimit : true" ng-click="methods.open($index);" show-image-async="{{image.thumbUrl || image.url}}" title="{{image.title}}" async-kind="thumb" ng-style="{\'width\' : thumbSize+\'px\', \'height\' : thumbSize+\'px\'}">'+
+ 								'<div class="{{ itemClass }}" ng-gallery-flexi-attributes ng-repeat="image in images track by image.id" ng-if="thumbLimit ? $index < thumbLimit : true" ng-click="methods.open($index);" show-image-async="{{image.thumbUrl || image.url}}" title="{{image.title}}" async-kind="thumb" ng-style="{\'width\' : thumbSize+\'px\', \'height\' : thumbSize+\'px\'}">'+
  									'<div class="loader"></div>'+
  								'</div>' +
  							'</div>' +
