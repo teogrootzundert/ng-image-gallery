@@ -10,7 +10,7 @@
 	};
 
 	angular
-	.module('thatisuday.ng-image-gallery', ['ngAnimate'])
+	.module('teogrootzundert.ng-image-gallery-test', ['ngAnimate'])
 	.provider('ngImageGalleryOpts', function(){
 		var defOpts = {
 			thumbnails  	:   true,
